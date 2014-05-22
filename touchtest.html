@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, user-scalable=1" />
+        <title>Touch Test</title>
+        <style>
+            body{
+                padding:0;
+                margin:0;
+            }
+            .container{
+                height:150px;
+            }
+        </style>
+
+
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Touch Page</h1>
+            <div>Log:</div>
+            <div id="loglist"></div>
+        </div>
+
+        <script>
+            var logListDisplay = document.getElementById("loglist");
+            var logList=""
+
+            function updateZoomWidth(text){
+                console.log(text)
+                logListDisplay.innerHTML=logListDisplay.innerHTML + "<p>" + text + "</p>"
+            }
+
+            document.addEventListener("touchstart", function(){
+                updateZoomWidth("Start")
+            });
+            document.addEventListener("touchmove", function(){
+                updateZoomWidth("Moving")
+            });
+            document.addEventListener("touchend", function(){
+                updateZoomWidth("End")
+            });
+            document.addEventListener("touchcancel", function(){
+                updateZoomWidth("Cancel")
+            });
+        </script>
+    </body>
+</html>
