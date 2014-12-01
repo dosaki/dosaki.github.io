@@ -1,1 +1,45 @@
-Hi!
+<html>
+    <head>
+    </head>
+    <body>
+        <div class="container">
+            <div class="aboutcontainer">
+                <p>Hi there!</p>
+                <p>This is sort of a work in progress...</p>
+            </div>
+
+            <div class="repocontainer">
+                <p>Here's what I've got around here:</p>
+
+                <div id="repolist" class="repolist">
+
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function httpGet(url){
+                var request = new XMLHttpRequest();
+                request.open("GET", url, false);
+                request.send(null);
+
+                return request.responseText;
+            }
+
+            var repos = JSON.parse(httpGet("https://api.github.com/users/dosaki/repos"));
+            var repoListDisplay = document.getElementById("repolist")
+
+            var repoList = "<ul>"
+
+            for (i in repos){
+                repoList += "<li><a class='reponame' href='" + repos[i].html_url + "'>"
+                    + repos[i].name
+                    + "</a> <span class='repodescription'>- "
+                    + repos[i].description
+                    + "</span></li>"
+            }
+
+            repoListDisplay.innerHTML = repoList + "</ul>"
+        </script>
+    </body>
+</html>
