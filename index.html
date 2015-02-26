@@ -1,21 +1,157 @@
 <html>
     <head>
+        <title>Dosaki</title>
+        <link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css">
     </head>
     <body>
         <div class="container">
             <div class="aboutcontainer">
-                <p>Hi there!</p>
+                <h1>Hi there!</h1>
                 <p>This is sort of a work in progress...</p>
             </div>
 
-            <div class="repocontainer">
-                <p>Here's what I've got around here:</p>
+            <div class="experiencecontainer">
+                <h1>What the heck have I been doing with my life?</h1>
 
-                <div id="repolist" class="repolist">
+                <ul>
+                    <li>
+                        <h2><img src="/imgs/exp/webn.jpg"/> Software Developer <small>at Webnographer</small></h3>
+                        <h3><small>December 2012 - Present</small></h2>
+                        <p>
+                            Being in a small company, lets you do a little bit
+                            of everything and dealing with international clients
+                            (such as BT, Electrolux, AB-InBev, Millenium) forces
+                            you to work with a high level of quality.
+                        </p>
+                        <p>
+                            My main responsibilities are developing the in-house
+                            Webnographer Usability Research tool which involves
+                            a lot of hardcore Javascript, Groovy and Java, a bit
+                            of UX, software design and most of all, problem
+                            solving.
+                        </p>
+                        <p>
+                            I also take care of our systems and operations.
+                        </p>
+                    </li>
+                    <li>
+                        <h2><img src="/imgs/exp/pig.jpg"/> Creator and Organizer <small>of Portugal Indie Games Festival</small></h2>
+                        <h3><small>April 2012</small></h3>
+                        <p>
+                            Co-organized an indie-games event in Portalegre.
+                        </p>
+                        <p>
+                            I did everything from arranging sponsors, spreading
+                            the word out to small indie-developers, managing
+                            people and resources during the event.
+                        </p>
+                    </li>
+                </ul>
+            </div>
 
+            <div class="hobbiescontainer">
+                <h1>How do I waste my time?</h1>
+
+                <div id="coding">
+                    <h2>Coding</h2>
+                    <div id="repos">
+                        <h3>... and what do I have to show for it? <small>(not much, really)</small></h3>
+                        <div id="repolist" class="repolist">
+                            <!-- This gets populated with github api -->
+                        </div>
+                    </div>
+                    <div id="languages">
+                        <h3>... but what do I like to use?</h3>
+                        <ul>
+                            <li>
+                                <img src="/imgs/code/groovy.jpg" title="Groovy Language" alt="Groovy Language"/>
+                                <a href="http://groovy-lang.org/">Groovy</a>
+                                (A very fitting name)
+                            </li>
+                            <li>
+                                <img src="/imgs/code/grails.jpg" title="Grails Framework" alt="Grails Framework"/>
+                                <a href="https://grails.org/">Grails</a>
+                                (Truly the holy grail of frameworks!)
+                            </li>
+                            <li>
+                                <img src="/imgs/code/javascript.jpg" title="Javascript Language" alt="Javascript Language"/>
+                                <a href="http://en.wikipedia.org/wiki/JavaScript">Javascript</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="gaming">
+                    <h2>Gaming</h2>
+                    <h3>
+                        <small>
+                            PC Master Race... maybe because I can't shoot
+                            without a mouse.
+                        </small>
+                    </h3>
+                    <div id="favgames">
+                        <h3>These are my favourites</h3>
+                        <ul>
+                            <li>
+                                <img src="/imgs/games/zerg.jpg" title="Playing as Zerg" alt="Playing as Zerg"/> Starcraft 2
+                            </li>
+                            <li>
+                                <img src="/imgs/games/engi.jpg" title="Playing as Engineer" alt="Playing as Engineer"/> Team Fortress 2
+                            </li>
+                            <li>
+                                <img src="/imgs/games/paragon.jpg" title="Playing as boring goody-two-shoes..." alt="Playing as boring goody-two-shoes..."/> Mass Effect 1, 2 and 3
+                            </li>
+                            <li>
+                                <img src="/imgs/games/mc-me.jpg" title="Playing as Redstone Magician!" alt="Playing as Redstone Magician!"/> Minecraft
+                            </li>
+                            <li>
+                                <img src="/imgs/games/hl-lambda.jpg" title="Playing as ..." alt="Playing as ..."/> Half-Life 1, 2 <strike>and 3</strike>
+                            </li>
+                            <li>
+                                <img src="/imgs/games/priest.jpg" title="Playing as a shadowpriest" alt="Playing as shadowpriest"/> World of Warcraft (that was a long time ago, but it was special, you know?)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="arting">
+                    <h2>Arting <small>(... is that a word?)</small></h2>
+                    <div id="3Dobjects">
+                        <h3>Some were low-poly and made for games...</h3>
+                        <ul>
+                            <li>
+                                <img src="/imgs/art/small/earth_elem.jpg" title="Earth Elemental" alt="Earth Elemental"/> Earth Elemental
+                            </li>
+                            <li>
+                                <img src="/imgs/art/small/zep_tower.jpg" title="Vaalnor Zepelin Tower" alt="Vaalnor Zepelin Tower"/> Vaalnor Zepelin Tower
+                            </li>
+                            <li>
+                                <img src="/imgs/art/small/ah.jpg" title="Nehlya's Auction House" alt="Nehlya's Auction House"/> Nehlya's Auction House <small>(untextured)</small>
+                            </li>
+                            <li>
+                                <img src="/imgs/art/small/big_building.jpg" title="Nehlya Big Building" alt="Nehlya Big Building"/> Nehlya Big Building <small>(untextured)</small>
+                            </li>
+                            <li>
+                                <img src="/imgs/art/small/church.jpg" title="Nehlya Church" alt="Nehlya Church"/> Nehlya Church <small>(untextured)</small>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="renders">
+                        <h3>... and some were rendered</h3>
+                        <ul>
+                            <li>
+                                <img src="/imgs/art/small/lightcycles.jpg" title="Tron-inspired Lightcycles" alt="Tron-inspired Lightcycles"/> Tron-inspired Lightcycles <small>(quick render)</small>
+                            </li>
+                            <li>
+                                <img src="/imgs/art/small/chess.jpg" title="Chess Board" alt="Chess Board"/> Chess Board
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
+        <script src="/js/jquery-1.11.2.js"></script>
+        <script src="/js/bootstrap.js"></script>
 
         <script>
             function httpGet(url){
